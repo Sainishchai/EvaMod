@@ -58,15 +58,15 @@ Example: </code/batch https://t.me/teamEvaMaria/2</code> </code>https://t.me/tea
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- TechMagazine-AutoFilterBot Supports both url and alert inline buttons.
+Bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. TechMagazine-AutoFilterBot supports buttons with any telegram media type.
+2. Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/TechMagazineYT)</code>
+<code>[Button Text](buttonurl:https://t.me/cv_autofilter_bot)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -90,6 +90,135 @@ Example: </code/batch https://t.me/teamEvaMaria/2</code> </code>https://t.me/tea
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
+
+    BAN_TXT = """
+
+<b>BAN</b>
+
+Ban lets you ban a user from the group without giving him the possibility to join again using the link of the group.
+
+<b><u>Commands and usage:</u></b>
+
+/ban - <code>Ban a user.</code>
+/tban - <code>temporarily ban a user. Eg: Time Values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.</code>
+/unban - <code>Unban a user.</code>
+
+"""
+
+    GAMES_TXT = """
+
+<b>GAMES</b>
+
+In this module you can play games.
+
+<b><u>Commands and usage:</u></b>
+
+/dice - <code>roll the dice</code>
+/throw or /dart - <code>i don't know wtf is this myr!.</code>
+/goal or /shoot - <code>to play football :|</code>
+/luck - <code>നോക്കീട്ടു കാര്യം ഇല്ല നിന്റെ കാര്യം പോക്കാ ☻︎‌‌</code>
+
+"""
+
+    PURGE_TXT = """
+
+</b>PURGE<b>
+
+This module help you to delete a lot of messages from group
+
+<b><u>Commands and usage:</u></b>
+
+/purge - <code>Delete all messages from the replied to message, to the current message.</code>
+
+"""
+
+    TELEGRAPH_TXT = """
+
+<b>TELEGRAPH</b>
+
+This Module helps you to upload media file on telegra.ph.
+
+<b><u>Commands and usage:</u></b>
+
+/telegraph - <code>reply this command on a picture or video under 5mb for Telegraph link.</code>
+
+Note: Maximum file size limit is 5mb.
+
+"""
+
+
+    JSON_TXT = """
+
+<b>JSON</b>
+
+Json can fetch you all the data contained in a telegram message.
+
+<b><u>Commands and usage:</u></b>
+
+/json - <code>to know user details. Supports both PM and Groups.</code>
+
+Note: Everyone can use this command , if spaming happens bot will automatically ban you from the group.
+
+"""
+
+
+    KICK_TXT = """
+
+<b>KICK</b>
+
+Kick incative members from group. Add me as admin with ban users permission in group.
+
+
+<b><u>Commands and usage:</u></b>
+
+/inkick - <code>command with required arguments and i will kick members from group.</code>
+/instatus - <code>to check current status of chat member from group.</code>
+/inkick within_month long_time_ago - <code>to kick users who are offline for more than 6-7 days.</code>
+/inkick long_time_ago - <code>to kick members who are offline for more than a month and Deleted Accounts.</code>
+/dkick - <code>to kick deleted accounts.</code>
+
+"""
+
+
+    MUTE_TXT = """
+
+<b>MUTE</b>
+
+Mute puts a user in read-only mode. He can read but he can't send any messages.
+
+<b><u>Commands and usage:</u></b>
+
+/mute - <code>Mute a user.</code>
+/unmute - <code>Unmute a user.</code>
+/tmute - <code>Temporarily mute a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.</code>
+
+"""
+
+
+    REPORT_TXT = """
+
+<b>REPORT</b>
+
+This module helps you to report a message or a user to the admins of the respective group.
+
+<b><u>Commands and usage:</u></b>
+
+/report or @admins - <code>to report a message or user to the group admins.</code>
+
+"""
+
+
+    STICKER_TXT = """
+
+<b>STICKER ID</b>
+
+This Module Helps you to find a sticker's id.
+
+<b><u>Commands and usage:</u></b>
+
+/stickerid - <code>reply to a sticker to know that sticker's id.</code>
+
+"""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
