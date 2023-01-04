@@ -629,7 +629,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "thefilestore":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='manuelfilter')
+            InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -650,8 +650,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Group', url='https://t.me/+4Gma2ZZFFRA2MWQ1'),
-            InlineKeyboardButton('Owner', url='https://t.me/ddrabit/19')
+            InlineKeyboardButton('', url='https://t.me/+4Gma2ZZFFRA2MWQ1'),
+            InlineKeyboardButton('', url='https://t.me/ddrabit/19')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -682,7 +682,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='about'),
+            InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
