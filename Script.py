@@ -60,6 +60,19 @@ You can use the filestore feature for any public channel without bot being admin
 Example: </code/batch https://t.me/teamEvaMaria/2</code> </code>https://t.me/teamEvaMaria/9</code>
 
 """
+    BATH_TXT = """ 
+<b>BATCH</b>
+
+You can use the filestore feature for any public channel without bot being admin in that channel (only media messages  can be stored). 
+
+</b>Commands & Usage:</b>
+
+1. For a single file use /link command as reply to file.(only video, audio and documents are supported for now.)
+
+2. For creating batch files , use /batch </code><starting message link> <ending message link>.</code>
+Example: </code/batch https://t.me/teamEvaMaria/2</code> </code>https://t.me/teamEvaMaria/9</code>
+
+"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
