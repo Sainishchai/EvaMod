@@ -454,29 +454,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('ᴀᴜᴛᴏ', callback_data='autofilter'),
-            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ', callback_data='manuelfilter'),
-            InlineKeyboardButton('ʙᴀᴛᴄʜ', callback_data='thefilestore')
+            InlineKeyboardButton('𝖠𝗎𝗍𝗈', callback_data='autofilter'),
+            InlineKeyboardButton('𝖬𝖺𝗇𝗎𝖺𝗅', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝖡𝖺𝗍𝖼𝗁', callback_data='thefilestore')
         ], [
-            InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin'),
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
+            InlineKeyboardButton('𝖠𝖽𝗆𝗂𝗇', callback_data='admin'),
+            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
+            InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺', callback_data='extra')
         ], [
-            InlineKeyboardButton('ɪᴍᴅʙ', callback_data='theimdb'),
-            InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='gamex'),
-            InlineKeyboardButton('ᴜʀʟ sʜᴏʀᴛ', callback_data='urlshort')
+            InlineKeyboardButton('𝖨𝗆𝖽𝖻', callback_data='theimdb'),
+            InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='jsonx'),
+            InlineKeyboardButton('𝖴𝗋𝗅 𝖲𝗁𝗈𝗋𝗍', callback_data='urlshort')
         ], [
-            InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='mutex'),
-            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='kickx'),
-            InlineKeyboardButton('ʙᴀɴ', callback_data='banx')
+            InlineKeyboardButton('', callback_data='mutex'),
+            InlineKeyboardButton('', callback_data='kickx'),
+            InlineKeyboardButton('', callback_data='banx')
         ], [
-            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purgex'),
-            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ', callback_data='reportx'),
-            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='telegraphx')
+            InlineKeyboardButton('𝖲𝗉𝖾𝖾𝖽', callback_data='pingx'),
+            InlineKeyboardButton('𝖳𝖾𝗑𝗍 𝖲𝗁𝖺𝗋𝖾', callback_data='sharex'),
+            InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='telegraphx')
         ], [
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ᴊsᴏɴ', callback_data='jsonx'),
-            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ', callback_data='stickerx')
+            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='start'),
+            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='stickerx')
         ], [
             InlineKeyboardButton('', callback_data='start')
         ]]
@@ -496,23 +496,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "mutex":
+    elif query.data == "pingx":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.MUTE_TXT,
+            text=script.PING_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "kickx":
+    elif query.data == "sharex":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.KICK_TXT,
+            text=script.SHARE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
