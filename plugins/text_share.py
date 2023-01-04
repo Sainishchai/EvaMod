@@ -1,7 +1,6 @@
 import os
 from pyrogram import Client, filters
 from urllib.parse import quote
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 @Client.on_message(filters.command(["share_text", "share", "sharetext",]))
 async def share_text(client, message):
@@ -15,12 +14,9 @@ async def share_text(client, message):
     else:
         await message.reply_text(
             text=f"**Reply to a text message to generate link.**",                
-            reply_to_message_id=reply_id,               
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("", url=f"https://t.me/MKN_BOTZ_DISCUSSION_GROUP")]])
-            )                                                   
+            reply_to_message_id=reply_id                                                   
         return
     await message.reply_text(
-        text=f"**Here is Your Sharing Text: ** https://t.me/share/url?url=" + quote(input_text),
-        reply_to_message_id=reply_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("", url=f"https://t.me/share/url?url={quote(input_text)}")]])       
+        text=f"**Here is Your Sharing Text:** https://t.me/share/url?url=" + quote(input_text),
+        reply_to_message_id=reply_id
     )
