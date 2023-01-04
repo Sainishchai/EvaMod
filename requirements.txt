@@ -10,3 +10,5 @@ pyshorteners
 imdbpy==2021.4.18
 aiohttp
 akinator
+telegraph
+urllib.parse
