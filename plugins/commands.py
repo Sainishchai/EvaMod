@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('', url='https://t.me/wudixh')
             ],
             [
                 InlineKeyboardButton('🛠️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -45,8 +45,12 @@ async def start(client, message):
             InlineKeyboardButton('🎉 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=start'),
             InlineKeyboardButton('', callback_data='ok')
         ], [
+            InlineKeyboardButton('⚡️EL DORADO🚬',  url=f'https://t.me/wudixh')
+        ], [
             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
+        ], [
+            InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ]]
@@ -91,8 +95,12 @@ async def start(client, message):
             InlineKeyboardButton('🎉 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=start'),
             InlineKeyboardButton('', callback_data='ok')
         ], [
+            InlineKeyboardButton('⚡️EL DORADO🚬',  url=f'https://t.me/wudixh')
+        ], [
             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
+        ], [
+            InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ]]
