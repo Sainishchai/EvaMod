@@ -87,7 +87,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"💿[{get_size(file.file_size)}]🎭 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -440,8 +440,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎉 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=start'),
             InlineKeyboardButton('', callback_data='ok')
         ], [
+            InlineKeyboardButton('⚡️EL DORADO🚬',  url=f'https://t.me/wudixh')
+        ], [
             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
+        ], [
+            InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ]]
@@ -474,9 +478,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖳𝖾𝗑𝗍 𝖲𝗁𝖺𝗋𝖾', callback_data='sharex'),
             InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='telegraphx')
         ], [
-            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='start'),
             InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='stickerx')
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='stickerx'),
+            InlineKeyboardButton('«𝖡𝖺𝖼𝗄«', callback_data='start')
         ], [
             InlineKeyboardButton('', callback_data='start')
         ]]
@@ -650,8 +654,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('', url='https://t.me/+4Gma2ZZFFRA2MWQ1'),
-            InlineKeyboardButton('', url='https://t.me/ddrabit/19')
+            InlineKeyboardButton('', url='https://t.me/wudixh1/1'),
+            InlineKeyboardButton('', url='https://t.me/wudixh1/1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -799,7 +803,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"💿[{get_size(file.file_size)}] 🎭{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
