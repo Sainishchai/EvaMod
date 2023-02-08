@@ -42,11 +42,11 @@ Search IMDB results and customize IMDB Template. You can customize them as per y
 /set_template - <code>To set Custom template for your group.</code>
 
 <a href=https://t.me/TeamEvamaria/9>Know More....</a>"""
-    ABOUT_TXT = """<b>◎ Nᴀᴍᴇ: Michael Jackson
-◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/ddrabit>LᴀL</a>
+    ABOUT_TXT = """<b>◎ Nᴀᴍᴇ: ᴋᴜᴛᴛᴜ ʙᴏᴛ™ 🤖
+◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/wudixh1>This Person</a>
 ◎ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
 ◎ Dᴀᴛᴀ Bᴀsᴇ: Mᴏɴɢᴏ DB
-◎ Bᴏᴛ Sᴇʀᴠᴇʀ: Koyeb</b>"""
+◎ Bᴏᴛ Sᴇʀᴠᴇʀ: QuickFast</b>"""
     BATCH_TXT = """ 
 <b>BATCH</b>
 
@@ -78,7 +78,7 @@ Example: </code/batch https://t.me/teamEvaMaria/2</code> </code>https://t.me/tea
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. TechMagazine-AutoFilterBot should have admin privillage.
+1. This bot should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
