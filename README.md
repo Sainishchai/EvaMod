@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="mi.jpg" alt="Eva Maria Logo">
+  <img src="assets/mi.jpg" alt="ᴋᴜᴛᴛᴜ ʙᴏᴛ™ 🤖">
 </p>
 <h1 align="center">
   <b>ᴋᴜᴛᴛᴜ ʙᴏᴛ™ 🤖</b>
