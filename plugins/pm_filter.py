@@ -443,6 +443,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚡️EL DORADO🚬',  url=f'https://t.me/wudixh')
         ], [
             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('👻 𝖮𝗐𝗇𝖾𝗋', callback_data="owner_info"),
             InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
         ], [
             InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
