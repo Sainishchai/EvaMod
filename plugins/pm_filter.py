@@ -443,7 +443,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚡️EL DORADO🚬',  url=f'https://t.me/wudixh')
         ], [
             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('👻 𝖮𝗐𝗇𝖾𝗋', callback_data="owner_info"),
             InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
         ], [
             InlineKeyboardButton('🔎 𝖨𝗇𝗅𝗂𝗇𝖾 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat='')
@@ -459,15 +458,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝖠𝗎𝗍𝗈', callback_data='autofilter'),
-            InlineKeyboardButton('𝖬𝖺𝗇𝗎𝖺𝗅', callback_data='manuelfilter'),
+            InlineKeyboardButton('📊𝖠𝗎𝗍𝗈', callback_data='autofilter'),
+            InlineKeyboardButton('✏𝖬𝖺𝗇𝗎𝖺𝗅', callback_data='manuelfilter'),
             InlineKeyboardButton('𝖡𝖺𝗍𝖼𝗁', callback_data='thefilestore')
         ], [
             InlineKeyboardButton('𝖠𝖽𝗆𝗂𝗇', callback_data='admin'),
-            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
-            InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺', callback_data='extra')
+            InlineKeyboardButton('📟𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
+            InlineKeyboardButton('⚙𝖤𝗑𝗍𝗋𝖺', callback_data='extra')
         ], [
-            InlineKeyboardButton('𝖨𝗆𝖽𝖻', callback_data='theimdb'),
+            InlineKeyboardButton('🎞𝖨𝗆𝖽𝖻', callback_data='theimdb'),
             InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='jsonx'),
             InlineKeyboardButton('𝖴𝗋𝗅 𝖲𝗁𝗈𝗋𝗍', callback_data='urlshort')
         ], [
@@ -475,12 +474,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('', callback_data='kickx'),
             InlineKeyboardButton('', callback_data='banx')
         ], [
-            InlineKeyboardButton('𝖲𝗉𝖾𝖾𝖽', callback_data='pingx'),
+            InlineKeyboardButton('🚅𝖲𝗉𝖾𝖾𝖽', callback_data='pingx'),
             InlineKeyboardButton('𝖳𝖾𝗑𝗍 𝖲𝗁𝖺𝗋𝖾', callback_data='sharex'),
             InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='telegraphx')
         ], [
-            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='stickerx')
+            InlineKeyboardButton('♻️𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),
+            InlineKeyboardButton('🎨𝖲𝗍𝗂𝖼𝗄𝖾𝗋', callback_data='stickerx')
         ], [
             InlineKeyboardButton('«𝖡𝖺𝖼𝗄«', callback_data='start')
         ], [
@@ -723,11 +722,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "owner_info":#ownerinfo
-            btn = [[
-                    InlineKeyboardButton("👩‍🦯 𝖡𝖺𝖼𝗄", callback_data="start"),
-                    InlineKeyboardButton("📞 𝖢𝗈𝗇𝗍𝖺𝖼𝗍", url="t.me/im_goutham_josh")
-                  ]]
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
