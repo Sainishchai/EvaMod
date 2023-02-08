@@ -262,10 +262,6 @@ these are the extra features of Eva Maria
 • /search  - <code>get the film information from various sources.</code>"""
     
     
-    OWNER_INFO = """
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/im_goutham_josh'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>"""
-    
-    
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
