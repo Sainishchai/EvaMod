@@ -64,14 +64,14 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("Tʜɪs ɪs ɴᴏᴛ Fᴏʀ Yᴏᴜ!", show_alert=True)
+        return await query.answer("Tʜɪs ɪs ɴᴏᴛ Fᴏʀ Yᴏᴜ!👀", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("Lɪɴᴋ Exᴘɪʀᴇᴅ!", show_alert=True)
+        await query.answer("Lɪɴᴋ Exᴘɪʀᴇᴅ!✈", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -143,14 +143,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("𝗧𝗵𝗶𝘀 𝗶𝘀 𝗡𝗼𝘁 𝗙𝗼𝗿 𝗬𝗼𝘂.", show_alert=True)
+        return await query.answer("𝗧𝗵𝗶𝘀 𝗶𝘀 𝗡𝗼𝘁 𝗙𝗼𝗿 𝗬𝗼𝘂.👀", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("𝗟𝗶𝗻𝗸 𝗘𝘅𝗽𝗶𝗿𝗲𝗱.", show_alert=True)
+        return await query.answer("𝗟𝗶𝗻𝗸 𝗘𝘅𝗽𝗶𝗿𝗲𝗱.✈", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('<b>ᴄʜᴇᴄᴋɪɴɢ ᴛʜᴇ ᴍᴏᴠɪᴇ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ...</b>')
+    await query.answer('ᴄʜᴇᴄᴋɪɴɢ ᴛʜᴇ ᴍᴏᴠɪᴇ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ...🎈🎈🎈')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -158,7 +158,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>Tʜɪs ᴍᴏᴠɪᴇs ɪs ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ.</b>')
+            k = await query.message.edit('<b>Tʜɪs ᴍᴏᴠɪᴇs ɪs ɴᴏᴛ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ.</b>🎞')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -437,10 +437,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🎉 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=start'),
+            InlineKeyboardButton('🎉 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🎉', url=f'http://t.me/{temp.U_NAME}?startgroup=start'),
             InlineKeyboardButton('', callback_data='ok')
         ], [
-            InlineKeyboardButton('⚡️EL DORADO🚬',  url=f'https://t.me/wudixh')
+            InlineKeyboardButton('⚡️ᴇʟᴅᴏʀᴀᴅᴏ🚬',  url=f'https://t.me/wudixh')
         ], [
             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🛡️ ᴀʙᴏᴜᴛ', callback_data='about')
@@ -706,7 +706,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('« Back', callback_data='about'),
+            InlineKeyboardButton('« Back', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
